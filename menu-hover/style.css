@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+.container {
+  background-color: blue;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1000px;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  border: 1px solid black;
+}
+.header {
+  width: 20%;
+}
+.img {
+  width: 80%;
+}
+.box-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.list-item {
+  padding: 0 0 8.5px 5px;
+  text-transform: uppercase;
+}
+.main-menu {
+  position: relative;
+  list-style-type: none;
+  display: block;
+}
+
+.sub-menu {
+  width: 132px;
+  position: absolute;
+  display: none;
+  color: #757575;
+  background-color: white;
+  text-decoration: none;
+  top: 30px;
+  right: -132px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+a {
+  display: block;
+  color: #757575;
+  line-height: 38px;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.main-menu {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.menu-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-box:hover,
+.sub-menu li:hover {
+  background-color: rgb(214, 198, 198);
+}
+.menu-box:hover .menu1,
+.menu-box:hover i,
+.sub-menu li:hover a {
+  color: orange;
+}
+
+.main-menu li:hover .sub-menu {
+  display: block;
+}
