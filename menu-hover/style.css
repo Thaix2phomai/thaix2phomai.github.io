@@ -67,6 +67,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 1s;
+}
+
+.sub-menu li {
+  transition: 1s;
 }
 
 .menu-box:hover,
